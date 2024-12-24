@@ -1,6 +1,6 @@
 import React from 'react';
 import { Code, Brain, Laptop, Terminal } from 'lucide-react';
-import profileImage from '/Users/tatebreg/Downloads/project/src/assets/BRG05983 2.png'; // Adjust the relative path
+import profileImage from '../assets/BRG05983 2.png'; // Adjust the relative path
 
 export default function About() {
   const skills = [

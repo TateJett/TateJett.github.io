@@ -16,7 +16,7 @@ function App() {
         <Contact />
       </main>
       <footer className="bg-slate-900 text-center py-6">
-        <p className="text-gray-400">© 2024 Your Name. All rights reserved.</p>
+        <p className="text-gray-400">© 2024 Tate Bregman. All rights reserved.</p>
       </footer>
     </div>
   );
