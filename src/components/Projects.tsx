@@ -11,45 +11,57 @@ import arcadeCabinetImage from '../assets/Arcade Cabinet.png';
 const projects = [
   {
     title: 'Handwritten Digit Recognition with CNN',
-    description: 'Developed a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset, achieving an accuracy of nearly 98%.',
+    description:
+      'Developed a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset, achieving an accuracy of nearly 98%.',
     type: 'ML',
-    image: handwrittenDigitRecognitionImage, // Use the corresponding image here
+    image: handwrittenDigitRecognitionImage,
     technologies: ['Python', 'PyTorch', 'MNIST Dataset'],
+    link: '/projects/handwritten-digit-recognition', // Link to project page
   },
   {
     title: 'Chromosomal Instability Detection',
-    description: 'Working at MD Anderson on detection and quantification of biological markers in cellular images.',
+    description:
+      'Working at MD Anderson on detection and quantification of biological markers in cellular images.',
     type: 'ML',
-    image: chromosomalInstabilityImage, // Use the corresponding image here
+    image: chromosomalInstabilityImage,
     technologies: ['Python', 'Pytorch'],
+    link: '/projects/chromosomal-instability-detection', // Add project-specific link
   },
   {
     title: 'Wine Quality Prediction Using Deep Neural Network',
-    description: 'Built a Deep Neural Network (DNN) to predict the quality of white wine based on various chemical properties, achieving an accuracy of 76.53%.',
+    description:
+      'Built a Deep Neural Network (DNN) to predict the quality of white wine based on various chemical properties, achieving an accuracy of 76.53%.',
     type: 'ML',
-    image: wineQualityPredictionImage, // Use the corresponding image here
+    image: wineQualityPredictionImage,
     technologies: ['Python', 'PyTorch', 'Wine Quality Dataset'],
+    link: '/projects/wine-quality-prediction', // Add project-specific link
   },
   {
     title: 'Amazon Review Sentiment Analysis',
-    description: 'Analyzed Amazon product reviews to determine customer sentiment.',
+    description:
+      'Analyzed Amazon product reviews to determine customer sentiment.',
     type: 'ML',
-    image: amazonReviewImage, // Use the corresponding image here
+    image: amazonReviewImage,
     technologies: ['Python', 'Natural Language Processing', 'Amazon Product Reviews'],
+    link: '/projects/amazon-review-sentiment-analysis', // Add project-specific link
   },
   {
     title: 'Optimal Airport Location Analysis',
-    description: 'Conducted an analysis to determine the optimal location for a new airport.',
+    description:
+      'Conducted an analysis to determine the optimal location for a new airport.',
     type: 'ML',
-    image: optimalAirportLocationImage, // Use the corresponding image here
+    image: optimalAirportLocationImage,
     technologies: ['Python', 'Geospatial Analysis', 'Data Visualization'],
+    link: '/projects/optimal-airport-location-analysis', // Add project-specific link
   },
   {
     title: 'Arcade Cabinet',
-    description: 'Researched, designed, and fabricated a fully functional arcade cabinet. Developed software to emulate classic arcade games, integrating it with custom-built controls and a user interface. (Image is before painting and adding eletronics) ',
+    description:
+      'Researched, designed, and fabricated a fully functional arcade cabinet. Developed software to emulate classic arcade games, integrating it with custom-built controls and a user interface. (Image is before painting and adding electronics)',
     type: 'robotics',
-    image: arcadeCabinetImage, // Use the corresponding image here
+    image: arcadeCabinetImage,
     technologies: ['Woodworking', 'Raspberry Pi', 'Electronics'],
+    link: '/projects/arcade-cabinet', // Add project-specific link
   },
 ];
 

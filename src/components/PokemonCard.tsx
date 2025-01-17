@@ -6,6 +6,7 @@ interface PokemonCardProps {
   type: string;
   image: string;
   technologies: string[];
+  link: string; // Link to the project page
 }
 
 export default function PokemonCard({
@@ -14,6 +15,7 @@ export default function PokemonCard({
   type,
   image,
   technologies,
+  link,
 }: PokemonCardProps) {
   const typeColors = {
     'full-stack': 'from-purple-400 to-purple-600',
@@ -24,11 +26,8 @@ export default function PokemonCard({
   };
 
   return (
-    // Wrap the card in an anchor tag pointing to GitHub
     <a
-      href="https://github.com/TateJett"
-      target="_blank"
-      rel="noopener noreferrer"
+      href={link} // Navigate to the project page
       className="block transform transition-all duration-300 hover:scale-105 hover:rotate-1"
     >
       <div className="relative w-80 h-[28rem] bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl shadow-xl overflow-hidden border-2 border-slate-700">
@@ -43,7 +42,7 @@ export default function PokemonCard({
         </div>
 
         <div className="p-4">
-          {/* Project Title - Adjusted margin-top */}
+          {/* Project Title */}
           <h3 className="text-xl font-bold text-white mt-2.5 mb-2">{title}</h3>
 
           {/* Project Image */}
