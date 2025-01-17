@@ -13,7 +13,7 @@ export default function Hero() {
           {/* Hero Content */}
           <div className="relative space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
                 Hello, I'm Tate
               </span>
             </h1>

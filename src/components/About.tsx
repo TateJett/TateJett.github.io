@@ -14,14 +14,14 @@ export default function About() {
     <section id="about" className="py-20 bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
             About Me
           </span>
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-gray-300 text-lg">
-              I'm a Computer Science student at Rice University, Currently working at MD Anderson developing machine learning algorithms to automate the detection and quantification of biological
+              I'm a Computer Science student at Rice University, currently working at MD Anderson developing machine learning algorithms to automate the detection and quantification of biological
               markers in cellular images, focusing on chromosomal instability (CIN) as a key indicator of cancer progression. 
             </p>
             <p className="text-gray-300 text-lg">
@@ -47,7 +47,7 @@ export default function About() {
           <div className="flex justify-center items-center">
             {/* Explicitly set the size */}
             <div
-              className="rounded-full overflow-hidden border-4 border-blue-500"
+              className="overflow-hidden border-4 border-blue-500"
               style={{
                 width: '400px', // Set the width to 200px
                 height: '600px', // Set the height to 200px
