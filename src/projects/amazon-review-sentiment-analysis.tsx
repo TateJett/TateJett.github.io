@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function AmazonReviewSentimentAnalysis() {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ export default function AmazonReviewSentimentAnalysis() {
       <nav className="flex justify-between items-center px-8 py-4 bg-slate-800">
         <h1 className="text-2xl font-bold">Amazon Review Sentiment Analysis</h1>
         <button
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(-1)} // Navigate back to the previous page
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition"
         >
           Back
