@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
-              <a href="#about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">About</a>
-              <a href="#projects" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Projects</a>
-              <a href="#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Contact</a>
+              <Link to="#about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">About</Link>
+              <Link to="#projects" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Projects</Link>
+              <Link to="#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Contact</Link>
               <div className="flex space-x-4 ml-4">
                 <a href="https://github.com/TateJett" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                   <Github className="w-5 h-5" />
@@ -45,27 +46,27 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="absolute top-0 left-0 w-full bg-slate-900/90 p-4 space-y-4 z-40">
-          <a
-            href="#about"
+          <Link
+            to="#about"
             className="text-gray-300 hover:text-white block px-3 py-2 rounded-md"
             onClick={toggleMenu}
           >
             About
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            to="#projects"
             className="text-gray-300 hover:text-white block px-3 py-2 rounded-md"
             onClick={toggleMenu}
           >
             Projects
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="#contact"
             className="text-gray-300 hover:text-white block px-3 py-2 rounded-md"
             onClick={toggleMenu}
           >
             Contact
-          </a>
+          </Link>
           <div className="flex space-x-4">
             <a
               href="https://github.com/TateJett"
