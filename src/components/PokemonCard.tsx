@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface PokemonCardProps {
   title: string;
@@ -26,8 +27,8 @@ export default function PokemonCard({
   };
 
   return (
-    <a
-      href={link} // Navigate to the project page
+    <Link
+      to={link} // Use 'to' for Link component
       className="block transform transition-all duration-300 hover:scale-105 hover:rotate-1"
     >
       <div className="relative w-80 h-[28rem] bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl shadow-xl overflow-hidden border-2 border-slate-700">
@@ -70,6 +71,6 @@ export default function PokemonCard({
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
