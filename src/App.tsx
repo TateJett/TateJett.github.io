@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="bg-slate-900 min-h-screen">
+      <ScrollToTop /> {/* Add ScrollToTop here */}
       {/* Conditionally Render Navbar */}
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
       <main>
