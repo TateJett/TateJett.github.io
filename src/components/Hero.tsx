@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link'; // Import HashLink for smooth scrolling
 import { Brain, Terminal } from 'lucide-react';
 
 export default function Hero() {
@@ -27,18 +28,18 @@ export default function Hero() {
               </span>
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
-              <a
-                href="#projects"
+              <HashLink
+                to="#projects"
                 className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg text-center transition-all transform hover:scale-105 w-full sm:w-auto"
               >
                 View Projects
-              </a>
-              <a
-                href="#contact"
+              </HashLink>
+              <HashLink
+                to="#contact"
                 className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg text-center transition-all transform hover:scale-105 w-full sm:w-auto"
               >
                 Contact Me
-              </a>
+              </HashLink>
             </div>
           </div>
         </div>

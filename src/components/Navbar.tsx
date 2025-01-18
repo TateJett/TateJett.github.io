@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { HashLink } from 'react-router-hash-link'; // Import HashLink for smooth scrolling
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +17,9 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
-              <Link to="#about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">About</Link>
-              <Link to="#projects" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Projects</Link>
-              <Link to="#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Contact</Link>
+              <HashLink to="/#about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">About</HashLink>
+              <HashLink to="/#projects" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Projects</HashLink>
+              <HashLink to="/#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md">Contact</HashLink>
               <div className="flex space-x-4 ml-4">
                 <a href="https://github.com/TateJett" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                   <Github className="w-5 h-5" />
@@ -46,27 +46,27 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="absolute top-0 left-0 w-full bg-slate-900/90 p-4 space-y-4 z-40">
-          <Link
-            to="#about"
+          <HashLink
+            to="/#about"
             className="text-gray-300 hover:text-white block px-3 py-2 rounded-md"
             onClick={toggleMenu}
           >
             About
-          </Link>
-          <Link
-            to="#projects"
+          </HashLink>
+          <HashLink
+            to="/#projects"
             className="text-gray-300 hover:text-white block px-3 py-2 rounded-md"
             onClick={toggleMenu}
           >
             Projects
-          </Link>
-          <Link
-            to="#contact"
+          </HashLink>
+          <HashLink
+            to="/#contact"
             className="text-gray-300 hover:text-white block px-3 py-2 rounded-md"
             onClick={toggleMenu}
           >
             Contact
-          </Link>
+          </HashLink>
           <div className="flex space-x-4">
             <a
               href="https://github.com/TateJett"
