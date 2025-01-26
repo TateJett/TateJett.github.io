@@ -7,8 +7,18 @@ import wineQualityPredictionImage from '../assets/wine quality prediction.png';
 import amazonReviewImage from '../assets/Amazon Review.png';
 import optimalAirportLocationImage from '../assets/optimal airport location.png';
 import arcadeCabinetImage from '../assets/Arcade Cabinet.png';
+import owldineImage from '../assets/owldine.png'; // Add your OwlDine image here
 
 const projects = [
+  {
+    title: 'OwlDine',
+    description:
+      'Developed a responsive web application for college dining services. Features include real-time menus, meal tracking, and dietary filtering. Built with modern web development technologies.',
+    type: 'web-app',
+    image: owldineImage, // Ensure this image exists in your assets folder
+    technologies: ['React', 'TypeScript', 'Flask', 'PostgreSQL'],
+    link: '/projects/owldine', // Add project-specific link
+  },
   {
     title: 'Handwritten Digit Recognition with CNN',
     description:

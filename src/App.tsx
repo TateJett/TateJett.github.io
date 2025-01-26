@@ -12,6 +12,7 @@ import AmazonReviewSentimentAnalysis from './projects/amazon-review-sentiment-an
 import OptimalAirportLocationAnalysis from './projects/optimal-airport-location-analysis';
 import ArcadeCabinet from './projects/arcade-cabinet';
 import ChromosomalInstabilityDetection from './projects/chromosomal-instability-detection';
+import OwlDine from './projects/owldine'; // Import the OwlDine project page
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
     '/projects/optimal-airport-location-analysis',
     '/projects/arcade-cabinet',
     '/projects/chromosomal-instability-detection',
+    '/projects/owldine', // Add OwlDine path here
   ];
 
   return (
@@ -69,6 +71,10 @@ function App() {
           <Route
             path="/projects/chromosomal-instability-detection"
             element={<ChromosomalInstabilityDetection />}
+          />
+          <Route
+            path="/projects/owldine"
+            element={<OwlDine />} // Add the OwlDine project route
           />
         </Routes>
       </main>
