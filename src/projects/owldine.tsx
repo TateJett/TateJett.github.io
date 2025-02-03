@@ -27,7 +27,9 @@ export default function OwlDine() {
           <p className="text-gray-300 leading-relaxed">
             OwlDine was built to address a common pain point faced by students at Rice University—staying informed about
             dining options on campus. The platform provides real-time updates on dining hall statuses, menus, and user ratings
-            to create a more seamless dining experience.
+            to create a more seamless dining experience. Today, <strong>25-50% of Rice students use OwlDine at least once a week</strong>
+            to check menus, meal schedules, and dining hall availability. <strong>
+            This amounts to 1000 to 2000 students using OwlDine Weekly!</strong>
           </p>
         </div>
 
@@ -91,6 +93,11 @@ export default function OwlDine() {
             </li>
           </ul>
           <p className="text-gray-300 leading-relaxed mt-4">
+            To improve operational flexibility, we **created an admin page that allows for last-minute schedule changes** without 
+            requiring direct code modifications. This ensures that unexpected menu updates and dining hall closures can be reflected
+            instantly, reducing student frustration and improving the platform's reliability.
+          </p>
+          <p className="text-gray-300 leading-relaxed mt-4">
             We worked iteratively, incorporating user feedback throughout the development process to refine the design and
             functionality. The result is a platform that students can rely on to plan their meals effectively.
           </p>
@@ -103,6 +110,7 @@ export default function OwlDine() {
             <li>Real-time updates on dining hall operating statuses and meal times.</li>
             <li>User ratings and reviews for menu items to enhance dining choices.</li>
             <li>Integrated meal filtering based on dietary preferences.</li>
+            <li>Admin page for quick schedule updates without code changes.</li>
             <li>Responsive design for seamless use on desktops and mobile devices.</li>
           </ul>
         </section>
