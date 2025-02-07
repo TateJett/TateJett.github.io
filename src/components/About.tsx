@@ -50,7 +50,7 @@ export default function About() {
               className="overflow-hidden border-4 border-blue-500"
               style={{
                 width: '400px', // Set the width to 200px
-                height: '600px', // Set the height to 200px
+                height: '500px', // Set the height to 200px
               }}
             >
               <img
