@@ -1,9 +1,10 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Experience from './components/Experience';  // Import Experience Section
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import HandwrittenDigitRecognition from './projects/HandwrittenDigitRecognition';
@@ -12,12 +13,11 @@ import AmazonReviewSentimentAnalysis from './projects/amazon-review-sentiment-an
 import OptimalAirportLocationAnalysis from './projects/optimal-airport-location-analysis';
 import ArcadeCabinet from './projects/arcade-cabinet';
 import ChromosomalInstabilityDetection from './projects/chromosomal-instability-detection';
-import OwlDine from './projects/owldine'; // Import the OwlDine project page
+import OwlDine from './projects/owldine';
 
 function App() {
   const location = useLocation();
 
-  // Define paths where the main navbar should be hidden
   const hideNavbarPaths = [
     '/projects/handwritten-digit-recognition',
     '/projects/wine-quality-prediction',
@@ -25,57 +25,34 @@ function App() {
     '/projects/optimal-airport-location-analysis',
     '/projects/arcade-cabinet',
     '/projects/chromosomal-instability-detection',
-    '/projects/owldine', // Add OwlDine path here
+    '/projects/owldine',
   ];
 
   return (
     <div className="bg-slate-900 min-h-screen">
-      <ScrollToTop /> {/* Add ScrollToTop here */}
-      {/* Conditionally Render Navbar */}
+      <ScrollToTop />
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
       <main>
         <Routes>
-          {/* Default homepage */}
           <Route
             path="/"
             element={
               <>
                 <Hero />
                 <About />
+                <Experience /> {/* 👈 Added Experience Section Here */}
                 <Projects />
                 <Contact />
               </>
             }
           />
-          {/* Project pages */}
-          <Route
-            path="/projects/handwritten-digit-recognition"
-            element={<HandwrittenDigitRecognition />}
-          />
-          <Route
-            path="/projects/wine-quality-prediction"
-            element={<WineQualityPrediction />}
-          />
-          <Route
-            path="/projects/amazon-review-sentiment-analysis"
-            element={<AmazonReviewSentimentAnalysis />}
-          />
-          <Route
-            path="/projects/optimal-airport-location-analysis"
-            element={<OptimalAirportLocationAnalysis />}
-          />
-          <Route
-            path="/projects/arcade-cabinet"
-            element={<ArcadeCabinet />}
-          />
-          <Route
-            path="/projects/chromosomal-instability-detection"
-            element={<ChromosomalInstabilityDetection />}
-          />
-          <Route
-            path="/projects/owldine"
-            element={<OwlDine />} // Add the OwlDine project route
-          />
+          <Route path="/projects/handwritten-digit-recognition" element={<HandwrittenDigitRecognition />} />
+          <Route path="/projects/wine-quality-prediction" element={<WineQualityPrediction />} />
+          <Route path="/projects/amazon-review-sentiment-analysis" element={<AmazonReviewSentimentAnalysis />} />
+          <Route path="/projects/optimal-airport-location-analysis" element={<OptimalAirportLocationAnalysis />} />
+          <Route path="/projects/arcade-cabinet" element={<ArcadeCabinet />} />
+          <Route path="/projects/chromosomal-instability-detection" element={<ChromosomalInstabilityDetection />} />
+          <Route path="/projects/owldine" element={<OwlDine />} />
         </Routes>
       </main>
     </div>
