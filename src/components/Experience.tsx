@@ -11,12 +11,30 @@ const Experience = () => {
           </span>
         </h2>
 
-        {/* Increased to "mt-8" for more spacing */}
-        <div className="relative border-l-4 border-blue-500 ml-6 mt-8">
-          {/* ACT RICE (Tech Solutions Associate Associate) */}
-          <div className="relative pl-8 pb-12">
+        {/* Main Timeline Container with spacing */}
+        <div className="relative border-l-4 border-blue-500 ml-6 mt-8 space-y-12">
+          {/* Leonis Capital (Engineering Fellow) */}
+          <div className="relative pl-8 pb-12 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
+            {/* Centered Circle (Blue) */}
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
+            <h3 className="text-2xl font-semibold text-white">
+              Engineering Fellow <span className="text-blue-400">@Leonis Capital</span>
+            </h3>
+            <p className="text-gray-400">March 2025 – Present</p>
+            <ul className="text-gray-300 mt-2 list-disc list-inside">
+              <li>
+                Developing an ML model and full-stack application to rank and review startups, integrating data analysis on startup metrics, market trends, and financial indicators to enhance investment decisions.
+              </li>
+              <li>
+                Building front-end and back-end infrastructure for a scalable tool, gaining VC experience through deal evaluations, and researching emerging industries to support investment thesis.
+              </li>
+            </ul>
+          </div>
+
+          {/* ACT RICE (Tech Solutions Associate) */}
+          <div className="relative pl-8 pb-12 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
             {/* Centered Circle (Emerald) */}
-            <div className="absolute top-0 left-0 transform -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
               Tech Solutions Associate <span className="text-blue-400">@ACT RICE</span>
             </h3>
@@ -32,11 +50,12 @@ const Experience = () => {
           </div>
 
           {/* MD Anderson Cancer Center (Machine Learning Research Assistant) */}
-          <div className="relative pl-8 pb-12">
+          <div className="relative pl-8 pb-12 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
             {/* Centered Circle (Emerald) */}
-            <div className="absolute top-0 left-0 transform -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
-              Machine Learning Research Assistant <span className="text-blue-400">@MD Anderson Cancer Center, Akkemik Lab</span>
+              Machine Learning Research Assistant{" "}
+              <span className="text-blue-400">@MD Anderson Cancer Center, Akkemik Lab</span>
             </h3>
             <p className="text-gray-400">October 2024 - Present</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
@@ -50,11 +69,12 @@ const Experience = () => {
           </div>
 
           {/* Stanford Pacific Fund LLP (Summer Investment Research Intern) */}
-          <div className="relative pl-8">
+          <div className="relative pl-8 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
             {/* Centered Circle (Blue) */}
-            <div className="absolute top-0 left-0 transform -translate-x-1/2 w-10 h-10 bg-blue-400 border-4 border-slate-900 rounded-full"></div>
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
-              Summer Investment Research Intern <span className="text-blue-400">@Stanford Pacific Fund LLP</span>
+              Summer Investment Research Intern{" "}
+              <span className="text-blue-400">@Stanford Pacific Fund LLP</span>
             </h3>
             <p className="text-gray-400">June 2022 - August 2023</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
