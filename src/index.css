@@ -2,24 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
+/* We're handling typing animation in JavaScript now */
 .typing-text {
-  overflow: hidden;
-  border-right: .15em solid #60A5FA;
-  white-space: nowrap;
   margin: 0 auto;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #60A5FA; }
+/* Animation for the blinking cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
 }
 
 html {
