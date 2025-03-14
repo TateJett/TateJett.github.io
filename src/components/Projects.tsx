@@ -431,7 +431,6 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                   height: `${cardHeight}px`,
                   marginLeft: `-${cardWidth / 2}px`,
                   marginTop: `-${cardHeight / 2}px`,
-                  backfaceVisibility: 'hidden',
                   transition: isAnimating
                     ? 'all 600ms linear'
                     : 'all 0.3s ease-out',
@@ -459,16 +458,47 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                   onMouseEnter={() => handleCardHover(index)}
                   onMouseLeave={handleCardHoverEnd}
                 >
+                  {/* Front of card (content) */}
                   <div 
-                    className="bg-gray-800 rounded-xl overflow-hidden shadow-xl h-full w-full"
+                    className="bg-gray-800 rounded-xl overflow-hidden shadow-xl h-full w-full absolute"
                     style={{
-                      transform: 'rotateY(0deg)', // Keep card content facing forward
-                      display: 'flex', // Add flex display
-                      flexDirection: 'column', // Stack content vertically
-                      borderRadius: '12px', // Match the rounded appearance in the image
+                      transform: 'rotateY(0deg)', 
+                      transformStyle: 'preserve-3d',
+                      backfaceVisibility: 'hidden',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      borderRadius: '12px',
                     }}
                   >
                     <PokemonCard {...project} />
+                  </div>
+                  
+                  {/* Back of card */}
+                  <div 
+                    className="bg-gray-900 rounded-xl shadow-xl h-full w-full absolute"
+                    style={{
+                      transform: 'rotateY(180deg)',
+                      backfaceVisibility: 'hidden',
+                      borderRadius: '12px',
+                      border: '2px solid rgba(255, 255, 255, 0.1)',
+                      backgroundImage: 'linear-gradient(45deg, #222 25%, transparent 25%, transparent 75%, #222 75%, #222), linear-gradient(45deg, #222 25%, transparent 25%, transparent 75%, #222 75%, #222)',
+                      backgroundSize: '20px 20px',
+                      backgroundPosition: '0 0, 10px 10px',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <div className="w-16 h-16 opacity-30">
+                      {/* Simple logo or design for card back */}
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 12L12 22L22 12L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 22V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 13V8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 17C13.1046 17 14 16.1046 14 15C14 13.8954 13.1046 13 12 13C10.8954 13 10 13.8954 10 15C10 16.1046 10.8954 17 12 17Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
