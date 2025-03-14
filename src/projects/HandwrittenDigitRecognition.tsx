@@ -5,13 +5,13 @@ export default function HandwrittenDigitRecognition() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-slate-900 min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white">
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-8 py-4 bg-slate-800">
+      <nav className="flex justify-between items-center px-8 py-4 bg-black">
         <h1 className="text-2xl font-bold">Handwritten Digit Recognition</h1>
         <button
           onClick={() => navigate(-1)}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition"
+          className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
         >
           Back
         </button>
@@ -141,14 +141,12 @@ export default function HandwrittenDigitRecognition() {
             href="https://github.com/TateJett/Handwritten-Digit-Recognition-with-CNN"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 text-white px-6 py-3 rounded shadow hover:bg-blue-400 transition"
+            className="bg-white text-black px-6 py-3 rounded shadow hover:bg-gray-200 transition"
           >
             View Project on GitHub
           </a>
         </div>
       </div>
-
-      
     </div>
   );
 }

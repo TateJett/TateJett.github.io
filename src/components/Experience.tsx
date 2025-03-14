@@ -2,23 +2,23 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-slate-800">
+    <section id="experience" className="py-12 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Experience Title with Matching Gradient */}
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
+        {/* Experience Title with Black and White Gradient */}
+        <h2 className="text-4xl font-bold text-center text-white mb-6">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
             Experience
           </span>
         </h2>
 
         {/* Main Timeline Container with spacing */}
-        <div className="relative border-l-4 border-blue-500 ml-6 mt-8 space-y-12">
+        <div className="relative border-l-4 border-white ml-6 mt-4 space-y-6">
           {/* Leonis Capital (Engineering Fellow) */}
-          <div className="relative pl-8 pb-12 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
-            {/* Centered Circle (Blue) */}
-            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
+          <div className="relative pl-8 pb-6 group hover:bg-gray-900 transition-colors duration-300 p-4 rounded-lg">
+            {/* Centered Circle (White) */}
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
-              Engineering Fellow <span className="text-blue-400">@Leonis Capital</span>
+              Engineering Fellow <span className="text-gray-300">@Leonis Capital</span>
             </h3>
             <p className="text-gray-400">March 2025 – Present</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
@@ -32,11 +32,11 @@ const Experience = () => {
           </div>
 
           {/* ACT RICE (Tech Solutions Associate) */}
-          <div className="relative pl-8 pb-12 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
-            {/* Centered Circle (Emerald) */}
-            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
+          <div className="relative pl-8 pb-6 group hover:bg-gray-900 transition-colors duration-300 p-4 rounded-lg">
+            {/* Centered Circle (White) */}
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
-              Tech Solutions Associate <span className="text-blue-400">@ACT RICE</span>
+              Tech Solutions Associate <span className="text-gray-300">@ACT RICE</span>
             </h3>
             <p className="text-gray-400">January 2025 - Present</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
@@ -50,12 +50,12 @@ const Experience = () => {
           </div>
 
           {/* MD Anderson Cancer Center (Machine Learning Research Assistant) */}
-          <div className="relative pl-8 pb-12 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
-            {/* Centered Circle (Emerald) */}
-            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
+          <div className="relative pl-8 pb-6 group hover:bg-gray-900 transition-colors duration-300 p-4 rounded-lg">
+            {/* Centered Circle (White) */}
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
               Machine Learning Research Assistant{" "}
-              <span className="text-blue-400">@MD Anderson Cancer Center, Akkemik Lab</span>
+              <span className="text-gray-300">@MD Anderson Cancer Center, Akkemik Lab</span>
             </h3>
             <p className="text-gray-400">October 2024 - Present</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
@@ -69,12 +69,12 @@ const Experience = () => {
           </div>
 
           {/* Stanford Pacific Fund LLP (Summer Investment Research Intern) */}
-          <div className="relative pl-8 group hover:bg-slate-700 transition-colors duration-300 p-4 rounded-lg">
-            {/* Centered Circle (Blue) */}
-            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-emerald-400 border-4 border-slate-900 rounded-full"></div>
+          <div className="relative pl-8 group hover:bg-gray-900 transition-colors duration-300 p-4 rounded-lg">
+            {/* Centered Circle (White) */}
+            <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
               Summer Investment Research Intern{" "}
-              <span className="text-blue-400">@Stanford Pacific Fund LLP</span>
+              <span className="text-gray-300">@Stanford Pacific Fund LLP</span>
             </h3>
             <p className="text-gray-400">June 2022 - August 2023</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">

@@ -4,34 +4,32 @@ import profileImage from '../assets/BRG05983 2.png'; // Adjust the relative path
 
 export default function About() {
   const skills = [
-    { icon: <Code className="w-6 h-6" />, title: 'Languages', items: ['Python', 'JavaScript', 'TypeScript'] },
-    { icon: <Brain className="w-6 h-6" />, title: 'AI/ML', items: ['PyTorch', 'TensorFlow', 'Scikit-learn'] },
-    { icon: <Laptop className="w-6 h-6" />, title: 'Web Dev', items: ['React', 'Node.js', 'Next.js'] },
-    { icon: <Terminal className="w-6 h-6" />, title: 'Tools', items: ['Git', 'Docker', 'AWS'] },
+    { icon: <Code className="w-6 h-6" />, title: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'C++'] },
+    { icon: <Brain className="w-6 h-6" />, title: 'AI/ML', items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'NLP'] },
+    { icon: <Laptop className="w-6 h-6" />, title: 'Web Dev', items: ['React', 'Node.js', 'Next.js', 'Flask'] },
+    { icon: <Terminal className="w-6 h-6" />, title: 'Tools', items: ['Git', 'Docker', 'AWS', 'PostgreSQL'] },
   ];
 
   return (
-    <section id="about" className="py-20 bg-slate-800">
+    <section id="about" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
             About Me
           </span>
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-gray-300 text-lg">
-              I'm a Computer Science student at Rice University, currently working at MD Anderson developing machine learning algorithms to automate the detection and quantification of biological
-              markers in cellular images, focusing on chromosomal instability (CIN) as a key indicator of cancer progression. 
+              Computer Science and Mathematics student at Rice University with experience building ML systems at MD Anderson Cancer Center and LEONIS CAPITAL. I develop machine learning algorithms for cancer research and create AI-powered applications for investment analysis.
             </p>
             <p className="text-gray-300 text-lg">
-              My interests span across various domains including artificial intelligence, web development, and software engineering. 
-              I enjoy tackling complex problems and turning ideas into reality through code.
+              My passion lies in building intelligent systems that can learn and adapt. Whether working on cancer detection algorithms, investment tools, or educational platforms, I'm focused on creating technology that solves real problems.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-8">
               {skills.map((skill) => (
-                <div key={skill.title} className="bg-slate-700 p-4 rounded-lg">
-                  <div className="flex items-center space-x-2 mb-4 text-blue-400">
+                <div key={skill.title} className="bg-gray-900 p-4 rounded-lg">
+                  <div className="flex items-center space-x-2 mb-4 text-gray-400">
                     {skill.icon}
                     <h3 className="text-lg font-semibold text-white">{skill.title}</h3>
                   </div>
@@ -47,7 +45,7 @@ export default function About() {
           <div className="flex justify-center items-center">
             {/* Explicitly set the size */}
             <div
-              className="overflow-hidden border-4 border-blue-500"
+              className="overflow-hidden border-4 border-white"
               style={{
                 width: '400px', // Set the width to 200px
                 height: '500px', // Set the height to 200px

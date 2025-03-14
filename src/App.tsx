@@ -29,7 +29,7 @@ function App() {
   ];
 
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="bg-black min-h-screen">
       <ScrollToTop />
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
       <main>

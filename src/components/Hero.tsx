@@ -4,7 +4,7 @@ import { Brain, Terminal } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800 text-white pt-16">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black to-gray-900 text-white pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="relative">
           {/* Background Icon */}
@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Hero Content */}
           <div className="relative space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                 Hello, I'm Tate
               </span>
             </h1>
@@ -22,7 +22,7 @@ export default function Hero() {
               ML/AI Enthusiast & Computer Science Student
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 space-y-4 sm:space-y-0">
-              <Terminal className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+              <Terminal className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
               <span className="typing-text text-base sm:text-lg text-center sm:text-left break-words">
                 Building intelligent systems that learn and adapt
               </span>
@@ -30,13 +30,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
               <HashLink
                 to="#projects"
-                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg text-center transition-all transform hover:scale-105 w-full sm:w-auto"
+                className="bg-white hover:bg-gray-200 text-black px-6 py-3 rounded-lg text-center transition-all transform hover:scale-105 w-full sm:w-auto"
               >
                 View Projects
               </HashLink>
               <HashLink
                 to="#contact"
-                className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg text-center transition-all transform hover:scale-105 w-full sm:w-auto"
+                className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-lg text-center transition-all transform hover:scale-105 w-full sm:w-auto"
               >
                 Contact Me
               </HashLink>

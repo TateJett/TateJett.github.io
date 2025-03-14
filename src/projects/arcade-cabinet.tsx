@@ -5,13 +5,13 @@ export default function ArcadeCabinet() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-slate-900 min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white">
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-8 py-4 bg-slate-800">
+      <nav className="flex justify-between items-center px-8 py-4 bg-black">
         <h1 className="text-2xl font-bold">Arcade Cabinet</h1>
         <button
           onClick={() => navigate(-1)}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition"
+          className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
         >
           Back
         </button>

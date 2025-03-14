@@ -8,7 +8,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed top-0 w-full bg-slate-900/90 backdrop-blur-sm z-50">
+    <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo / Brand */}
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-full bg-slate-900/90 p-4 space-y-4 z-40">
+        <div className="absolute top-0 left-0 w-full bg-black/90 p-4 space-y-4 z-40">
           <HashLink
             to="/#about"
             className="text-gray-300 hover:text-white block px-3 py-2 rounded-md"

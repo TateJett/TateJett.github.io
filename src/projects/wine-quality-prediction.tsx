@@ -8,13 +8,13 @@ export default function WineQualityPrediction() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-slate-900 min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white">
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-8 py-4 bg-slate-800">
+      <nav className="flex justify-between items-center px-8 py-4 bg-black">
         <h1 className="text-2xl font-bold">Wine Quality Prediction</h1>
         <button
           onClick={() => navigate(-1)}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition"
+          className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
         >
           Back
         </button>
@@ -133,7 +133,7 @@ export default function WineQualityPrediction() {
                   href="https://github.com/TateJett/Wine-Quality-Prediction-Using-Deep-Neural-Network"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 underline"
+                  className="text-gray-300 underline"
                 >
                   GitHub Repository
                 </a>
@@ -156,7 +156,7 @@ export default function WineQualityPrediction() {
             href="https://github.com/TateJett/Wine-Quality-Prediction-Using-Deep-Neural-Network"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 text-white px-6 py-3 rounded shadow hover:bg-blue-400 transition"
+            className="bg-white text-black px-6 py-3 rounded shadow hover:bg-gray-200 transition"
           >
             View Project on GitHub
           </a>
