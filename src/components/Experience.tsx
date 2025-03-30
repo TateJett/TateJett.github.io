@@ -18,7 +18,7 @@ const Experience = () => {
             {/* Centered Circle (White) */}
             <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
-              Engineering Fellow <span className="text-gray-300">@Leonis Capital</span>
+              Engineering Fellow <span className="text-gray-300">@ Leonis Capital</span>
             </h3>
             <p className="text-gray-400">March 2025 – Present</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
@@ -36,7 +36,7 @@ const Experience = () => {
             {/* Centered Circle (White) */}
             <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
-              Tech Solutions Associate <span className="text-gray-300">@ACT RICE</span>
+              Tech Solutions Associate <span className="text-gray-300">@ ACT RICE</span>
             </h3>
             <p className="text-gray-400">January 2025 - Present</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
@@ -55,7 +55,7 @@ const Experience = () => {
             <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
               Machine Learning Research Assistant{" "}
-              <span className="text-gray-300">@MD Anderson Cancer Center, Akkemik Lab</span>
+              <span className="text-gray-300">@ MD Anderson Cancer Center, Akkemik Lab</span>
             </h3>
             <p className="text-gray-400">October 2024 - Present</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
@@ -74,7 +74,7 @@ const Experience = () => {
             <div className="absolute top-0 left-0 -translate-x-1/2 w-10 h-10 bg-white border-4 border-black rounded-full"></div>
             <h3 className="text-2xl font-semibold text-white">
               Summer Investment Research Intern{" "}
-              <span className="text-gray-300">@Stanford Pacific Fund LLP</span>
+              <span className="text-gray-300">@ Stanford Pacific Fund LLP</span>
             </h3>
             <p className="text-gray-400">June 2022 - August 2023</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
