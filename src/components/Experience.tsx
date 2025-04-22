@@ -38,7 +38,7 @@ const Experience = () => {
             <h3 className="text-2xl font-semibold text-white">
               Tech Solutions Associate <span className="text-gray-300">@ ACT RICE</span>
             </h3>
-            <p className="text-gray-400">January 2025 - Present</p>
+            <p className="text-gray-400">January 2025 - April 2025</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
               <li>
                 Developing a health-focused application for Hope Clinic to assist users in their weight loss journey by collecting biometric data.
@@ -57,7 +57,7 @@ const Experience = () => {
               Machine Learning Research Assistant{" "}
               <span className="text-gray-300">@ MD Anderson Cancer Center, Akkemik Lab</span>
             </h3>
-            <p className="text-gray-400">October 2024 - Present</p>
+            <p className="text-gray-400">October 2024 - April 2025</p>
             <ul className="text-gray-300 mt-2 list-disc list-inside">
               <li>
                 Designing and testing ML algorithms to automate detection and quantification of biological markers in cellular images, focusing on chromosomal instability (CIN).
